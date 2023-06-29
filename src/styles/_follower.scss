@@ -1,0 +1,72 @@
+.follower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: var(--cardBg);
+    &:nth-child(1){
+        border-top: 3px solid var(--Facebook);
+    }
+    &:nth-child(2){
+        border-top: 3px solid var(--Twitter);
+    }
+    &:nth-child(3){
+        border-top: 3px solid var(--Instagram);
+    }
+    &:nth-child(4){
+        border-top: 3px solid var(--YouTube);
+        .today {
+            p {
+                color: var(--BrightRed);
+            }
+        }
+    }
+    .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        .username {
+            color: var(--Text-1);
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .info {
+        .number {
+            font-size: 4.5rem;
+            font-weight: 700;
+        }
+        p {
+            color: var(--Text-1);
+            font-size: 1.1rem;
+            letter-spacing: 5px;
+        }
+    }
+    .today {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        img {
+            width: 10px;
+            height: 5px;
+        } p {
+            color: var(--LimeGreen);
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+    }
+}

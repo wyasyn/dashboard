@@ -1,0 +1,53 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+    @media screen and (width<500px) {
+         display: grid;
+         gap: 2rem;
+    }
+    h1 {
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 1.2rem;
+        color: var(--Text-1);
+    }
+    .toggle {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        h3 {
+            color: var(--Text-1);
+        }
+        .btns {
+            background: var(--Toggle);
+            width: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 1rem;
+            cursor: pointer;
+            padding: .2em;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            .btn {
+                width: 12px;
+                height: 12px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+                background: var(--bg);
+            }
+            &.active {
+                justify-content: start;
+            }
+        }
+    }
+}

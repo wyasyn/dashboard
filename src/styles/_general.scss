@@ -1,0 +1,21 @@
+
+.container {
+    max-width: 990px;
+    margin-inline: auto;
+    @media screen and (width<768px) {
+        width: 100%;
+        padding: 2em;
+    }
+}
+
+.heading {
+    margin: 1em 0;
+}
+
+.followers {
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+    justify-content: center;
+    gap: 3rem;
+}
